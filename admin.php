@@ -112,7 +112,7 @@ $result=mysqli_query($conn,$sql);
 																				</table>
 											<div class="text-center mb-4">
 												<a class="btn btn-success" href="index.php">Back to Form</a>
-												<a class="btn btn-danger" href="index.php">Logout</a>
+												<!-- <a class="btn btn-danger" href="index.php">Logout</a> -->
 											</div>
 
 			

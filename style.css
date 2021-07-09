@@ -6,8 +6,11 @@
 
 body{
 	background-image: url(img/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	height: auto;
+	font-family: 'Poppins', sans-serif;
 
 }
 
@@ -30,9 +33,7 @@ body{
 
 .header-title{
 	color: white;
-	font: italic;
 	font-weight: bold;
-	font-family: monospace;
 	text-transform: uppercase;
 	font-size: 25px;
 	letter-spacing: 10px;
@@ -179,10 +180,11 @@ ul li a{
 }
 .link1{
 	border: 1px solid gray;
+	background-image: linear-gradient(orange, tomato);
 }
 
 #link1:hover{
-	background-color: #004d00;
+	background-image: linear-gradient(orange, tomato);
 	color: white;
 	border: none;
 

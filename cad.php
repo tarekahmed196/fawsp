@@ -78,7 +78,7 @@ $result=mysqli_query($conn,$sql);
 
 
 																		<h1 class="text-center text-info text-uppercase">Crop Advertisement</h1>
-																		<table class="table table-bordered table-dark table-hover w-75 mx-auto text-center">
+																		<table class="table table-bordered table-success table-hover w-75 mx-auto text-center">
 																			<tr>
 																				<th>SL No</th>
 																				<th>Crop ID</th>

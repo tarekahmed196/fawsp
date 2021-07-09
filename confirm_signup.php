@@ -15,7 +15,7 @@ if ($password==$cpassword) {
 $sql="INSERT INTO users VALUES ('','$name','$email','$password')";
 
 if (mysqli_query($conn,$sql)) {
-	header('location: supp-login.php');
+	header('location: login.php');
 	$_SESSION['signup']="true";
 }
 

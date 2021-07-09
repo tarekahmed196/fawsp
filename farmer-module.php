@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once 'connect.php'
 ?>
 
 <!DOCTYPE html>
@@ -7,10 +8,11 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>farmer-login1</title>
+	<title>farmer-module</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="custom.css">
 	<link rel="stylesheet" href="css/fontawesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -31,6 +33,11 @@ session_start();
 			<div class="header-title">Farming Assistance Web Service</div>
 
 		</div>
+		<?php
+		$sql_get = mysqli_query($conn,"SELECT * FROM message WHERE status=0");
+		$count = mysqli_num_rows($sql_get);
+
+		?>
 		
 			<ul class="nav nav-tabs nav-justified">
 				<!-- <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Home</a></li> -->
@@ -44,7 +51,34 @@ session_start();
 
 				       <li class="nav-item"><a id="link1" class="nav-link" href="sell.php">Sell Crop</a></li>
 
-				       <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Logout</a></li></ul>
+				       <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Logout</a></li>
+
+				       <div class="btn-group">
+					  <button type="button" class="btn btn-light"> <i class="far fa-envelope"></i><span id="count" class="badge badge-danger"><?php echo $count; ?></span></button>
+					  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+					    <span class="caret"></span>
+					  </button>
+					  <div class="dropdown-menu">
+					    <?php
+							$sql_get1 = mysqli_query($conn,"SELECT * FROM message WHERE status=0");
+							if(mysqli_num_rows($sql_get1)>0)
+							{
+								while($result = mysqli_fetch_assoc($sql_get1))
+								{
+									echo '<a class="dropdown-item text-dark table-hover" href="read_msg.php?id='.$result['id'].'">'.$result['message'].'</a>';
+									echo '<div class="dropdown-divider"></div>';
+								}
+							}
+								else 
+							{
+								echo '<a class="dropdown-item text-danger font-weight-bold" href="" title=""><i class="fas fa-frown"></i>Sorry! No Messages</a>';
+							}
+
+
+							?>
+					    <!-- <a class="dropdown-item" href="#">Action</a> -->
+ 					 </div>
+ 					</ul>
 
 				       <!-- form section -->
 				       <!-- <div class="container"> -->
@@ -77,6 +111,9 @@ session_start();
 
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
 // Add the following code if you want the name of the file appear on select

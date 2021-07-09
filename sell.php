@@ -11,8 +11,10 @@ session_start();
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="custom.css">
 	<link rel="stylesheet" href="css/fontawesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
@@ -31,8 +33,11 @@ session_start();
 			<div class="header-title">Farming Assistance Web Service</div>
 
 		</div>
+
 		
 			<ul class="nav nav-tabs nav-justified">
+
+
 				<!-- <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Home</a></li> -->
 
 						<li class="nav-item"><a id="link1" class="nav-link" href="farmer-login1.php">Complaint Page</a></li>
@@ -44,7 +49,32 @@ session_start();
 
 				       <li class="nav-item"><a id="link1" class="nav-link"sell.php href="">Sell Crop</a></li>
 
-				       <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Logout</a></li></ul>
+				       <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Logout</a></li>
+				   <!-- <div class="btn-group">
+					  <button type="button" class="btn btn-light"> <i class="far fa-envelope"></i><span id="count" class="badge badge-danger">4</span></button>
+					  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+					    <span class="caret"></span>
+					  </button>
+					  <div class="dropdown-menu">
+					    <a class="dropdown-item" href="#">Tablet</a>
+					    <a class="dropdown-item" href="#">Smartphone</a>
+ 					 </div> -->
+					</div>
+					<!-- Dropdown -->
+					   <!--  <li class="nav-item dropdown">
+					      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					       <i class="far fa-envelope"></i>
+					      </a>
+					      <div class="dropdown-menu">
+					        <a class="dropdown-item" href="#">Message 1</a>
+					        <a class="dropdown-item" href="#">Message 2</a>
+					        <a class="dropdown-item" href="#">Message 3</a>
+					      </div> -->
+
+
+
+
+				</ul>
 
 				       <!-- form section -->
 				       <div class="main-body2">
@@ -69,10 +99,14 @@ session_start();
 								
 										<div class="text-center">
 											<input class="btn btn-success mt-3 mb-4 text-center" type="submit" value="Submit">
+											<a class="btn btn-warning mt-3 mb-4" href="farmer-module.php">Back</a>
 										</div>
+
+
 										
 										
 								</form>
+
 
 				       	
 				  		</div>
@@ -93,6 +127,10 @@ session_start();
 
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <?php 
 

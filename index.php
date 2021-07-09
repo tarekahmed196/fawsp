@@ -11,6 +11,11 @@ session_start();
 	<title>FAWSP</title>
 	<link rel="icon" href="img/tarek.jpg" type="image/jpg" sizes="16x16">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 	<link rel="stylesheet" href="style.css">
 
 </head>

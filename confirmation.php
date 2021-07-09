@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>farmer-login1</title>
+	<title>Confirmation</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="style.css">
@@ -26,39 +26,25 @@ session_start();
 				</div>
 			
 			<?php } ?>
-		<div class="header-image">
-			<img src="img/bg6.jpg" alt="">
-			<div class="header-title">Farming Assistance Web Service</div>
+		
 
 		</div>
 		
-			<ul class="nav nav-tabs nav-justified">
-				<!-- <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Home</a></li> -->
-
-						<li class="nav-item"><a id="link1" class="nav-link" href="farmer-login1.php">Complaint Page</a></li>
-
-						<!-- <li class="nav-item"><a id="link1" class="nav-link" href="">View Complaint Status</a></li> -->
-
-						<!-- <li class="nav-item"><a id="link1" class="nav-link" href="">Farming Tips</a></li> -->
-						<li class="nav-item"><a id="link1" class="nav-link" href="cad.php">Crop Add Details</a></li>
-
-				       <li class="nav-item"><a id="link1" class="nav-link" href="sell.php">Sell Crop</a></li>
-
-				       <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Logout</a></li></ul>
+			
 
 				       <!-- form section -->
-				       <div class="main-body2">
+				       
 				       	<div class="form2">
-							<h3 class="text-center text-white text-uppercase mt-4 mb-0 bg-primary">Complaint Module</h3>
+							<h3 class="text-center text-white text-uppercase mt-4 mb-0 bg-primary">Confirmation Message</h3>
 							
 
-								<form action="complain.php" method="post">
-									<label class="mt-3" for="usr">Farmer Name:</label>
-									<input class="form-control mb-3-1 w-100 mx-auto bg-white" type="text" name="name" placeholder="Farmer Name">
+								<form action="confirmation-hit.php" method="post">
+									<label class="mt-3" for="usr">Name:</label>
+									<input class="form-control mb-3-1 w-100 mx-auto bg-white" type="text" name="name" placeholder="Name">
 
 									<div class="form-group">
-                   <label class="mt-3" for="comment">Comment:</label>
-  									<textarea class="form-control bg-white"type="text" name="message1" placeholder="Write your text here.." rows="5" id="comment"></textarea>
+                   <label class="mt-3" for="comment">Feedback:</label>
+  									<textarea class="form-control bg-white"type="text" name="msg" placeholder="Write your text here.." rows="5" id="comment"></textarea>
 									</div>
 
 								
@@ -69,7 +55,7 @@ session_start();
 								
 										<div class="text-center">
 											<input class="btn btn-success mt-3 mb-4 text-center" type="submit" value="Submit">
-											<a class="btn btn-warning mt-3 mb-4" href="farmer-module.php">Back</a>
+											<a class="btn btn-warning mt-3 mb-4" href="crop-received.php">Back</a>
 										</div>
 										
 										
@@ -81,7 +67,7 @@ session_start();
 
 				
 				 			      	
-				       </div>
+				       
 
 
 																		

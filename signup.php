@@ -72,7 +72,7 @@ session_start();
 										
 								</form>
 								<div class="text-center mb-4">Signup complete??
-											<a class="btn btn-warning" href="Login.php">Back to Login</a>
+											<a class="btn btn-warning" href="login.php">Back to Login</a>
 										</div>
 								
 				       	

@@ -49,6 +49,8 @@ $result=mysqli_query($conn,$sql);
 
 				       <li class="nav-item"><a id="link1" class="nav-link" href="Crop-received.php">Crop Received</a></li>
 
+				       <li class="nav-item"><a id="link1" class="nav-link" href="confirmation.php">Confirmation</a></li>
+
 				       <li class="nav-item"><a id="link1" class="nav-link" href="index.php">Logout</a></li></ul>
 
 				       <!-- Crop Add Details -->
@@ -98,7 +100,7 @@ $result=mysqli_query($conn,$sql);
 
 										<!-- <a class="btn btn-success" href="edit.php?id=<?=$row['id']?>" >Edit</a> -->
 
-										<a class="btn btn-outline-danger" onclick="return confirm('Are you Sure ??')" href="delete.php?id=<?=$row['id'] ; ?>" 				title="">Remove Data</a>
+										<a class="btn btn-outline-danger" onclick="return confirm('Are you Sure ??')" href="delete.php?id=<?=$row['id'] ; ?>" 		title="">Remove Data</a>
 
 									</td>
 
